@@ -1,31 +1,25 @@
-Task 9.txt
-Today
-07:50
-
-Antony Bahati uploaded an item
-Text
-Task 9.txt
 #include "main.h"
-
 /**
-* _strcpy - Copy paste string
-* @dest: destination
-* @src: source
-*
-* Return: destination
-*/
+ *_strcpy - copies the string pointed to by src
+ *@dest: A pointer to a char that will be changed
+ *@src: A pointer to a char that will be changed
+ *Return: dest
+ */
 
 char *_strcpy(char *dest, char *src)
 {
-	int inc = 0;
 
-	while (*(src + inc) != '\0')
-	{
-		*(dest + inc) = *(src + inc);
-		inc++;
-	}
-	*(dest + inc) = '\0';
+int i;
 
+i = 0;
 
-	return (dest);
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+
+return (dest);
+
 }
